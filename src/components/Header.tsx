@@ -34,25 +34,6 @@ const Header: React.FC = () => {
           : "bg-transparent"
       }`}
     >
-      {/* --- CONTACT BANNER --- */}
-      {isBannerVisible && (
-        <div className="bg-black text-white px-4 sm:px-6 py-2 flex items-center justify-between text-xs sm:text-sm">
-          <div className="flex-grow text-center">
-            <span className="whitespace-nowrap">
-              Contact Us: <strong>info@quadvia.com</strong> |{" "}
-              <strong>+91 987 654 3210</strong>
-            </span>
-          </div>
-          <button
-            onClick={() => setIsBannerVisible(false)}
-            aria-label="Dismiss contact banner"
-            className="p-1 rounded-full transition-colors"
-          >
-            <X size={18} />
-          </button>
-        </div>
-      )}
-      {/* --- END OF BANNER --- */}
 
       <div className="max-w-7xl mx-auto pt-5 px-4 sm:px-6 lg:px-8">
         {/* UPDATED: Added 'relative' and responsive justify classes */}
