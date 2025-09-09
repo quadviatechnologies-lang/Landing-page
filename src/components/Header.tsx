@@ -61,7 +61,7 @@ const Header: React.FC = () => {
               <img src={logo} alt="Quadvia Logo" className="w-10 h-10" />
             </div>
             <span className="text-xl font-bold text-white font-['Comfortaa']">
-              Quadvia Technologies
+              QUADVIA Technologies
             </span>
           </Link>
 

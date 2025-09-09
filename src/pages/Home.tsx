@@ -69,7 +69,7 @@ const Home: React.FC = () => {
           <ScrollAnimation>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Why Choose <span className="text-teal-400">Quadvia?</span>
+                Why Choose <span className="text-teal-400">QUADVIA?</span>
               </h2>
               <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                 We deliver excellence through innovation, expertise, and
