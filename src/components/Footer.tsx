@@ -17,21 +17,23 @@ const Footer: React.FC = () => {
               <span className="text-xl font-bold text-white">Quadvia</span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Engineering dependable, state-of-the-art solutions to enhance enterprise 
-              efficiency and productivity.
+              Engineering dependable, state-of-the-art solutions to enhance
+              enterprise efficiency and productivity.
             </p>
           </div>
 
           {/* Column 2: Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">
+              Quick Links
+            </h3>
             <ul className="space-y-3">
               {[
-                { name: 'Home', path: '/' },
-                { name: 'About Us', path: '/about' },
-                { name: 'Services', path: '/services' },
-                { name: 'Career', path: '/contact' },
-                { name: 'Contact Us', path: '/contact' },
+                { name: "Home", path: "/" },
+                { name: "About Us", path: "/about" },
+                { name: "Services", path: "/services" },
+                { name: "Career", path: "/contact" },
+                { name: "Contact Us", path: "/contact" },
               ].map((link) => (
                 <li key={link.name}>
                   <Link
@@ -47,12 +49,14 @@ const Footer: React.FC = () => {
 
           {/* Column 3: Core Services */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Our Services</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">
+              Our Services
+            </h3>
             <ul className="space-y-3">
               {[
-                'Telecom Services',
-                'Networking Solutions',
-                'Security Surveillance',
+                "Telecom Services",
+                "Networking Solutions",
+                "Security Surveillance",
               ].map((service) => (
                 <li key={service}>
                   <Link
@@ -68,21 +72,26 @@ const Footer: React.FC = () => {
 
           {/* Column 4: Get in Touch */}
           <div>
-            <h3 className="text-lg font-semibold text-white mb-4">Get in Touch</h3>
+            <h3 className="text-lg font-semibold text-white mb-4">
+              Get in Touch
+            </h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-teal-400 mt-0.5 flex-shrink-0" />
                 <span className="text-gray-400 text-sm">
-                  123 Tech Tower, Thrissur, Kerala, 680001
+                  1st floor, 02/90-N, Cherur Road, Vengara, Oorakam, Malappuram,
+                  Kerala, Pin-676519
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-teal-400 flex-shrink-0" />
                 <a
-                  href="tel:+919876543210"
+                  href="https://wa.me/919567948489?text=Hello,%20I'm%20interested%20in%20your%20services."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-gray-400 hover:text-teal-400 transition-colors duration-200 text-sm"
                 >
-                  +91 987 654 3210
+                  +91 956 794 8489
                 </a>
               </li>
               <li className="flex items-center space-x-3">

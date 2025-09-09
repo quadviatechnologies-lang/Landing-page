@@ -304,7 +304,7 @@ const Contact: React.FC = () => {
                   <p>24/7 Emergency Support Available</p>
                   <p>for Critical Infrastructure Issues</p>
                   <p className="text-teal-400 font-medium">
-                    Call: +91 987 654 3210
+                    Call: +91 956 794 8489
                   </p>
                 </div>
               </div>
