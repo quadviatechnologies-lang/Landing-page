@@ -18,7 +18,7 @@ const Preloader: React.FC = () => {
             />
           ))}
         </div>
-        <div className="text-2xl font-bold text-teal-500 mb-2">QUADVIA Technologies</div>
+        <div className="text-2xl font-bold text-teal-500 mb-2">QUADVIA TECHNOLOGIES</div>
         <div className="text-gray-400 text-sm">Stay Connected. Stay Secured.</div>
       </div>
     </div>

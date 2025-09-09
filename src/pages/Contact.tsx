@@ -99,6 +99,7 @@ const Contact: React.FC = () => {
                       <p className="text-gray-400">
                         <a
                           href="mailto:info@quadvia.com"
+                          target="_blank"
                           className="hover:text-teal-400 transition-colors"
                         >
                           info@quadvia.com
@@ -113,16 +114,7 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-white mb-1">Call Us</h3>
-                      <p className="text-gray-400">
-                        <a
-                          href="https://wa.me/919567948489?text=Hello,%20I'm%20interested%20in%20your%20services."
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="hover:text-teal-400 transition-colors"
-                        >
-                          +91 956 794 8489
-                        </a>
-                      </p>
+                      <p className="text-gray-400">+91 949 705 5010</p>
                     </div>
                   </div>
 
@@ -137,10 +129,11 @@ const Contact: React.FC = () => {
                       <p className="text-gray-400">
                         Interested in joining our team? Send your resume to{" "}
                         <a
-                          href="mailto:careers@quadvia.com"
+                          href="mailto:shamsudheen@quadvia.com"
+                          target="_blank"
                           className="text-teal-400 hover:text-teal-300 transition-colors"
                         >
-                          careers@quadvia.com
+                          shamsudheen@quadvia.com
                         </a>
                       </p>
                     </div>
@@ -293,8 +286,7 @@ const Contact: React.FC = () => {
                   <h4 className="font-semibold text-white mb-2">
                     Office Hours
                   </h4>
-                  <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                  <p>Saturday: 9:00 AM - 2:00 PM</p>
+                  <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
                   <p>Sunday: Closed</p>
                 </div>
                 <div>
@@ -304,7 +296,7 @@ const Contact: React.FC = () => {
                   <p>24/7 Emergency Support Available</p>
                   <p>for Critical Infrastructure Issues</p>
                   <p className="text-teal-400 font-medium">
-                    Call: +91 956 794 8489
+                    Call: +91 949 705 5010
                   </p>
                 </div>
               </div>

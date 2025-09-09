@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import logo from "../assets/Quadvia-logo.png";
+import logo from "../assets/QUADVIA logo1.png";
+import full_logo from "../assets/Quadvia-fulllogo.jpg";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -29,11 +30,11 @@ const Header: React.FC = () => {
     <header
       className={`fixed w-full z-40 transition-all duration-300 ${
         isScrolled
-          ? "bg-gray-900/95 backdrop-blur-sm shadow-lg" // Added shadow for better depth
+          ? "bg-gray-900/95 backdrop-blur-sm shadow-lg"
           : "bg-transparent"
       }`}
     >
-      {/* --- NEW CONTACT BANNER --- */}
+      {/* --- CONTACT BANNER --- */}
       {isBannerVisible && (
         <div className="bg-black text-white px-4 sm:px-6 py-2 flex items-center justify-between text-xs sm:text-sm">
           <div className="flex-grow text-center">
@@ -53,16 +54,17 @@ const Header: React.FC = () => {
       )}
       {/* --- END OF BANNER --- */}
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 rounded-lg flex items-center justify-center">
-              <img src={logo} alt="Quadvia Logo" className="w-10 h-10" />
+      <div className="max-w-7xl mx-auto pt-5 px-4 sm:px-6 lg:px-8">
+        {/* UPDATED: Added 'relative' and responsive justify classes */}
+        <div className="relative flex items-center justify-end md:justify-between h-16">
+          {/* UPDATED: Logo with absolute positioning for mobile */}
+          <Link
+            to="/"
+            className="absolute left-1/2 -translate-x-1/2 md:static md:left-auto md:translate-x-0 flex items-center space-x-2"
+          >
+            <div className="w-60 h-20 pt5 rounded-lg flex items-center justify-center">
+              <img src={logo} alt="Quadvia Logo" className="w-60 h-20" />
             </div>
-            <span className="text-xl font-bold text-white font-['Comfortaa']">
-              QUADVIA Technologies
-            </span>
           </Link>
 
           {/* Desktop Navigation */}

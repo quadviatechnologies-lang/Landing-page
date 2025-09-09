@@ -14,7 +14,9 @@ const Footer: React.FC = () => {
               <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center">
                 <Wifi className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold text-white">Quadvia</span>
+              <span className="text-xl font-bold text-white">
+                QUADVIA TECHNOLOGIES
+              </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Engineering dependable, state-of-the-art solutions to enhance
@@ -85,19 +87,16 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-teal-400 flex-shrink-0" />
-                <a
-                  href="https://wa.me/919567948489?text=Hello,%20I'm%20interested%20in%20your%20services."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-teal-400 transition-colors duration-200 text-sm"
-                >
-                  +91 956 794 8489
-                </a>
+                <p className="text-gray-400 hover:text-teal-400 transition-colors duration-200 text-sm">
+                  {" "}
+                  +91 949 705 5010
+                </p>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-teal-400 flex-shrink-0" />
                 <a
                   href="mailto:info@quadvia.com"
+                  target="_blank"
                   className="text-gray-400 hover:text-teal-400 transition-colors duration-200 text-sm"
                 >
                   info@quadvia.com
