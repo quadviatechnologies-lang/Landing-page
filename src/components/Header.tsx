@@ -35,7 +35,7 @@ const Header: React.FC = () => {
       }`}
     >
 
-      <div className="max-w-7xl mx-auto pt-5 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8">
         {/* UPDATED: Added 'relative' and responsive justify classes */}
         <div className="relative flex items-center justify-end md:justify-between h-16">
           {/* UPDATED: Logo with absolute positioning for mobile */}
@@ -43,8 +43,8 @@ const Header: React.FC = () => {
             to="/"
             className="absolute left-1/2 -translate-x-1/2 md:static md:left-auto md:translate-x-0 flex items-center space-x-2"
           >
-            <div className="w-60 h-20 pt5 rounded-lg flex items-center justify-center">
-              <img src={logo} alt="Quadvia Logo" className="w-60 h-20" />
+            <div className="w-60 h-25 rounded-lg flex items-center justify-center">
+              <img src={logo} alt="Quadvia Logo" className="w-60 h-25" />
             </div>
           </Link>
 
