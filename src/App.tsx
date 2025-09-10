@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop';
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -15,7 +17,7 @@ function App() {
     // Simulate loading time for preloader
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -26,6 +28,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-900 text-white">
+      <ScrollToTop/>
       <Header />
       <main>
         <Routes>
