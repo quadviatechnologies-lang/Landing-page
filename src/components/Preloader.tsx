@@ -18,7 +18,7 @@ const Preloader: React.FC = () => {
             />
           ))}
         </div>
-        <div className="text-2xl text-teal-500 mb-2 font-comfortaa">
+        <div className="text-2xl font-bold text-teal-500 mb-2 font-comfortaa">
           QUADVIA TECHNOLOGIES
         </div>
         <div className="text-gray-400 text-sm">
