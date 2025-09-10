@@ -165,13 +165,6 @@ const About: React.FC = () => {
                 image:
                   "https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
               },
-              {
-                title: "Financial Services",
-                description:
-                  "High-security infrastructure solutions for banks and financial institutions.",
-                image:
-                  "https://images.pexels.com/photos/259027/pexels-photo-259027.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&fit=crop",
-              },
             ].map((client, index) => (
               <ScrollAnimation key={index} delay={(index % 3) + 1}>
                 <div className="bg-gray-700/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-600 hover:border-teal-400 transition-all duration-300 group">

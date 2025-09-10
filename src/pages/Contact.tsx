@@ -114,7 +114,9 @@ const Contact: React.FC = () => {
                     </div>
                     <div>
                       <h3 className="font-semibold text-white mb-1">Call Us</h3>
-                      <p className="text-gray-400">+91 949 705 5010</p>
+                      <p className="text-gray-400">
+                        +91 949 705 5010, +91 956 794 8489
+                      </p>
                     </div>
                   </div>
 
@@ -260,7 +262,7 @@ const Contact: React.FC = () => {
             <div className="bg-gray-700/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-600">
               <div className="aspect-video">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d<ZOOMLEVEL>!2d<longitude>!3d<latitude>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64d007d74b7b1%3A0xc145d1f2d4d4e7ab!2sVibrantviva%20office,%20Vengara%20Achanambalam%20Road,%20Kazhukanchina,%20Vengara,%20Oorakam,%20Kerala%20676519!5e0!3m2!1sen!2sin!4v<NEWTIMESTAMP>!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62624.12345678901!2d75.987561!3d11.055639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sNew%20Location!5e0!3m2!1sen!2sin!4v1694352000000!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
