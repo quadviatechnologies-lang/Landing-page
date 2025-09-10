@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Wifi, MapPin, Phone, Mail, Linkedin, Twitter } from 'lucide-react';
+import { MapPin, Phone, Mail, Linkedin, Twitter } from 'lucide-react';
 import quadvia_logo from "../assets/QUADVIA logo1.png"
 
 const Footer: React.FC = () => {
@@ -13,7 +13,11 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
               <div className="w-40 rounded-lg flex items-center justify-center">
-                <img src={quadvia_logo} alt="Quadvia Logo" className="w-full h-auto" />
+                <img
+                  src={quadvia_logo}
+                  alt="Quadvia Logo"
+                  className="w-full h-auto"
+                />
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
@@ -87,7 +91,7 @@ const Footer: React.FC = () => {
                 <Phone className="w-4 h-4 text-teal-400 flex-shrink-0" />
                 <p className="text-gray-400 hover:text-teal-400 transition-colors duration-200 text-sm">
                   {" "}
-                  +91 949 705 5010
+                  +91 949 705 5010, +91 956 794 8489
                 </p>
               </li>
               <li className="flex items-center space-x-3">

@@ -10,16 +10,20 @@ const Preloader: React.FC = () => {
               key={index}
               className="bg-teal-500 rounded-sm animate-pulse"
               style={{
-                width: '8px',
+                width: "8px",
                 height: `${20 + index * 8}px`,
                 animationDelay: `${index * 0.2}s`,
-                animationDuration: '1.2s'
+                animationDuration: "1.2s",
               }}
             />
           ))}
         </div>
-        <div className="text-2xl font-bold text-teal-500 mb-2">QUADVIA TECHNOLOGIES</div>
-        <div className="text-gray-400 text-sm">Stay Connected. Stay Secured.</div>
+        <div className="text-2xl text-teal-500 mb-2 font-comfortaa">
+          QUADVIA TECHNOLOGIES
+        </div>
+        <div className="text-gray-400 text-sm">
+          Stay Connected. Stay Secured.
+        </div>
       </div>
     </div>
   );

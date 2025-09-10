@@ -298,7 +298,7 @@ const Contact: React.FC = () => {
                   <p>24/7 Emergency Support Available</p>
                   <p>for Critical Infrastructure Issues</p>
                   <p className="text-teal-400 font-medium">
-                    Call: +91 949 705 5010
+                    Call: +91 949 705 5010, +91 956 794 8489
                   </p>
                 </div>
               </div>
