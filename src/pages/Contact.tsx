@@ -171,7 +171,7 @@ const Contact: React.FC = () => {
                   Send us a Message
                 </h3>
                 <form
-                  action="https://formspree.io/f/mandveda"
+                  action="https://formspree.io/f/xeolnlzv"
                   method="POST"
                   className="space-y-6"
                 >
