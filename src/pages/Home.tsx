@@ -1,14 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {
-  ArrowRight,
-  Users,
-  Zap,
-  Shield,
-  Target,
-} from "lucide-react";
+import { ArrowRight, Users, Zap, Shield, Target } from "lucide-react";
 import ScrollAnimation from "../components/ScrollAnimation";
-import home_hero_img from "../assets/Home-hero.jpeg"
+import home_hero_img from "../assets/Home-hero.jpeg";
+import { Star } from "lucide-react";
+import testimonial_avatar from "../assets/testimonial-avatar.jpeg";
 
 const Home: React.FC = () => {
   return (
@@ -144,11 +140,9 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollAnimation>
             <div className="text-center mb-16">
-              {/* UPDATED: Reduced base font size */}
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 What Our <span className="text-teal-400">Clients Say</span>
               </h2>
-              {/* UPDATED: Reduced base font size */}
               <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
                 Don't just take our word for it, hear from the enterprises who
                 trust us with their critical infrastructure.
@@ -158,11 +152,62 @@ const Home: React.FC = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              // Testimonial data...
+              {
+                quote:
+                  "Quadvia's networking solutions transformed our operations. Their team's expertise and professionalism exceeded our expectations in every aspect of the deployment.",
+                author: "Priya Sharma",
+                position: "IT Director",
+                company: "Innovate Solutions Pvt. Ltd.",
+                avatarUrl: testimonial_avatar,
+                rating: 5,
+              },
+              {
+                quote:
+                  "The security infrastructure implemented by Quadvia has given us complete peace of mind. Their ongoing support and maintenance services are exceptional.",
+                author: "Rajesh Kumar",
+                position: "Operations Head",
+                company: "Apex Logistics",
+                avatarUrl: testimonial_avatar,
+                rating: 5,
+              },
+              {
+                quote:
+                  "Outstanding telecom services delivery. The project was completed on time and within budget, with minimal disruption to our daily operations.",
+                author: "Anjali Menon",
+                position: "Facility Manager",
+                company: "Meridian Hotels",
+                avatarUrl: testimonial_avatar,
+                rating: 5,
+              },
             ].map((testimonial, index) => (
               <ScrollAnimation key={index} delay={index + 1}>
-                <div className="bg-gray-700/50 backdrop-blur-sm p-8 rounded-xl border border-gray-600 hover:border-teal-400 transition-all duration-300">
-                  {/* Testimonial content... */}
+                <div className="bg-gray-700/50 backdrop-blur-sm p-8 rounded-xl border border-gray-600 hover:border-teal-400 transition-all duration-300 h-full flex flex-col">
+                  <div className="flex mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="w-5 h-5 text-yellow-400 fill-current"
+                      />
+                    ))}
+                  </div>
+                  <p className="text-gray-300 mb-6 italic leading-relaxed flex-grow">
+                    "{testimonial.quote}"
+                  </p>
+                  <div className="flex items-center">
+                    <img
+                      src={testimonial.avatarUrl}
+                      alt={testimonial.author}
+                      className="w-12 h-12 rounded-full mr-4 object-cover"
+                    />
+                    <div>
+                      <div className="font-semibold text-white">
+                        {testimonial.author}
+                      </div>
+                      <div className="text-sm text-gray-400">
+                        {testimonial.position}, {testimonial.company}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </ScrollAnimation>
             ))}
