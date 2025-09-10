@@ -4,6 +4,8 @@ import { MapPin, Phone, Mail, Linkedin, Twitter } from 'lucide-react';
 import quadvia_logo from "../assets/QUADVIA logo1.png"
 
 const Footer: React.FC = () => {
+
+  const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, "-");
   return (
     <footer className="bg-gray-900 border-t border-gray-800">
       {/* Main Footer Content */}
@@ -62,8 +64,9 @@ const Footer: React.FC = () => {
                 "Security Surveillance",
               ].map((service) => (
                 <li key={service}>
+                  {/* UPDATED: The 'to' prop now includes the hash link */}
                   <Link
-                    to="/services"
+                    to={`/services#${slugify(service)}`}
                     className="text-gray-400 hover:text-teal-400 transition-colors duration-200 text-sm"
                   >
                     {service}
