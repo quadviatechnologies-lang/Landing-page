@@ -2,13 +2,14 @@ import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import logo from "../assets/QUADVIA logo1.png";
-import full_logo from "../assets/Quadvia-fulllogo.jpg";
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isBannerVisible, setIsBannerVisible] = useState(true); // State for the new banner
   const location = useLocation();
+
+  // Determine if the current page is the Home page
+  const isHomePage = location.pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -29,22 +30,25 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed w-full z-40 transition-all duration-300 ${
-        isScrolled
+        // UPDATED LOGIC: Apply background if scrolled OR if not on the Home page
+        isScrolled || !isHomePage
           ? "bg-gray-900/95 backdrop-blur-sm shadow-lg"
           : "bg-transparent"
       }`}
     >
 
-      <div className="max-w-7xl mx-auto pt-6 px-4 sm:px-6 lg:px-8">
-        {/* UPDATED: Added 'relative' and responsive justify classes */}
+      <div className="max-w-7xl mx-auto pt-4 pb-5 px-4 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-end md:justify-between h-16">
-          {/* UPDATED: Logo with absolute positioning for mobile */}
           <Link
             to="/"
             className="absolute left-1/2 -translate-x-1/2 md:static md:left-auto md:translate-x-0 flex items-center space-x-2"
           >
-            <div className="w-60 h-25 rounded-lg flex items-center justify-center">
-              <img src={logo} alt="Quadvia Logo" className="w-60 h-25" />
+            <div className="w-40 h-20 md:w-60 md:h-20 rounded-lg flex items-center justify-center transition-all duration-300">
+              <img
+                src={logo}
+                alt="Quadvia Logo"
+                className="w-40 h-20 md:w-60 md:h-20"
+              />
             </div>
           </Link>
 
