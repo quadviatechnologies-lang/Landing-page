@@ -2,14 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {
   ArrowRight,
-  CheckCircle,
   Users,
   Zap,
   Shield,
   Target,
-  Star,
 } from "lucide-react";
 import ScrollAnimation from "../components/ScrollAnimation";
+import home_hero_img from "../assets/Home-hero.jpeg"
 
 const Home: React.FC = () => {
   return (
@@ -19,7 +18,7 @@ const Home: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.pexels.com/photos/325229/pexels-photo-325229.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+            src={home_hero_img}
             alt="Data center background"
             className="w-full h-full object-cover"
           />
