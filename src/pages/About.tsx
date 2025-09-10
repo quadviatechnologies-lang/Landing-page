@@ -51,7 +51,7 @@ const About: React.FC = () => {
                 <p className="text-gray-300 text-lg mb-6 leading-relaxed">
                   Our greatest asset is our team. With skilled and experienced
                   human resources, we have the expertise to deploy
-                  high-performance, ultra-low latency networks that form the
+                  high performance, ultra low latency networks that form the
                   critical backbone of your operations.
                 </p>
                 <p className="text-gray-300 text-lg leading-relaxed">

@@ -81,7 +81,8 @@ const Home: React.FC = () => {
             <div className="text-center mb-16">
               {/* UPDATED: Reduced base font size */}
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Why Choose <span className="text-teal-400">QUADVIA?</span>
+                Why Choose{" "}
+                <span className="text-teal-400 font-comfortaa">QUADVIA?</span>
               </h2>
               {/* UPDATED: Reduced base font size */}
               <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
@@ -103,7 +104,7 @@ const Home: React.FC = () => {
                 icon: Zap,
                 title: "Advanced Technology",
                 description:
-                  "Cutting-edge solutions powered by the latest innovations in networking and security.",
+                  "Cutting edge solutions powered by the latest innovations in networking and security.",
               },
               {
                 icon: Users,
@@ -149,7 +150,7 @@ const Home: React.FC = () => {
               </h2>
               {/* UPDATED: Reduced base font size */}
               <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
-                Don't just take our word for it - hear from the enterprises who
+                Don't just take our word for it, hear from the enterprises who
                 trust us with their critical infrastructure.
               </p>
             </div>
