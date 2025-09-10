@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Phone, Mail } from "lucide-react"; // Added Phone and Mail icons
 import logo from "../assets/QUADVIA logo1.png";
 
 const Header: React.FC = () => {
@@ -8,8 +8,11 @@ const Header: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Determine if the current page is the Home page
   const isHomePage = location.pathname === "/";
+
+  // Contact info for the new icons
+  const phoneNumber = "+919497055010";
+  const emailAddress = "info@quadvia.com";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,25 +33,37 @@ const Header: React.FC = () => {
   return (
     <header
       className={`fixed w-full z-40 transition-all duration-300 ${
-        // UPDATED LOGIC: Apply background if scrolled OR if not on the Home page
         isScrolled || !isHomePage
           ? "bg-gray-900/95 backdrop-blur-sm shadow-lg"
           : "bg-transparent"
       }`}
     >
-
       <div className="max-w-7xl mx-auto pt-4 pb-5 px-4 sm:px-6 lg:px-8">
-        <div className="relative flex items-center justify-end md:justify-between h-16">
+        {/* UPDATED: Changed justify-end to justify-between for all screen sizes */}
+        <div className="relative flex items-center justify-between h-16">
+          {/* --- NEW Mobile Contact Icons (Left Side) --- */}
+          <div className="md:hidden flex items-center space-x-4">
+            <a
+              href={`tel:${phoneNumber}`}
+              className="text-gray-300 hover:text-teal-400"
+            >
+              <Phone size={22} />
+            </a>
+            <a
+              href={`mailto:${emailAddress}`}
+              className="text-gray-300 hover:text-teal-400"
+            >
+              <Mail size={22} />
+            </a>
+          </div>
+
+          {/* Centered Logo */}
           <Link
             to="/"
-            className="absolute left-1/2 -translate-x-1/2 md:static md:left-auto md:translate-x-0 flex items-center space-x-2"
+            className="absolute left-1/2 -translate-x-1/2 md:static md:left-auto md:translate-x-0 flex items-center"
           >
-            <div className="w-40 h-20 md:w-60 md:h-20 rounded-lg flex items-center justify-center transition-all duration-300">
-              <img
-                src={logo}
-                alt="Quadvia Logo"
-                className="w-40 h-20 md:w-60 md:h-20"
-              />
+            <div className="w-40 md:w-60 transition-all duration-300">
+              <img src={logo} alt="Quadvia Logo" className="w-full h-auto" />
             </div>
           </Link>
 
@@ -78,7 +93,7 @@ const Header: React.FC = () => {
             </Link>
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu Button (Right Side) */}
           <button
             className="md:hidden p-2 text-gray-300 hover:text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -87,7 +102,7 @@ const Header: React.FC = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Navigation Dropdown */}
         {isMobileMenuOpen && (
           <div className="md:hidden bg-gray-800 rounded-lg mt-2 p-4">
             <nav className="flex flex-col space-y-2">

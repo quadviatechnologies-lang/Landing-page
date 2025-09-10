@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Wifi, MapPin, Phone, Mail, Linkedin, Twitter } from 'lucide-react';
+import quadvia_logo from "../assets/QUADVIA logo1.png"
 
 const Footer: React.FC = () => {
   return (
@@ -11,12 +12,9 @@ const Footer: React.FC = () => {
           {/* Column 1: About Quadvia */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center">
-                <Wifi className="w-5 h-5 text-white" />
+              <div className="w-40 rounded-lg flex items-center justify-center">
+                <img src={quadvia_logo} alt="Quadvia Logo" className="w-full h-auto" />
               </div>
-              <span className="text-xl font-bold text-white">
-                QUADVIA TECHNOLOGIES
-              </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
               Engineering dependable, state-of-the-art solutions to enhance
