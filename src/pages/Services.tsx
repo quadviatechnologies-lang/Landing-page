@@ -32,6 +32,8 @@ const Services: React.FC = () => {
       description:
         "We deliver comprehensive telecom infrastructure services, from initial site planning to final commissioning, ensuring a robust and reliable communication backbone for your enterprise.",
       imageUrl: Telecom_Services_logo, // Placeholder Image
+      // You can add a dedicated icon component or string here if you want to replace Radio
+      iconComponent: Radio,
       subServices: [
         "RF Site Survey and Planning",
         "RF Installation and Commissioning",
@@ -46,6 +48,7 @@ const Services: React.FC = () => {
       description:
         "From structured LAN cabling to advanced SD-WAN solutions, we design and deploy secure, high-speed networks that power your business's productivity and connectivity.",
       imageUrl: Networking_Solutions_logo, // Placeholder Image
+      iconComponent: Network, // Changed to Network icon
       subServices: [
         "Router and Switch Installation",
         "Structured Cabling (LAN)",
@@ -60,6 +63,7 @@ const Services: React.FC = () => {
       description:
         "We provide end-to-end security solutions, from advanced CCTV to access control, designed to protect your assets and ensure complete peace of mind.",
       imageUrl: Security_Surveillance_logo, // Placeholder Image
+      iconComponent: Shield, // Changed to Shield icon
       subServices: [
         "CCTV Installation & Maintenance",
         "Access Control Systems",
@@ -72,7 +76,9 @@ const Services: React.FC = () => {
   ];
 
   return (
-    <div className="min-h-screen pt-16">
+    <div className="min-h-screen pt-16 bg-gray-900 text-white">
+      {" "}
+      {/* Added bg-gray-900 to ensure consistent background */}
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -99,53 +105,72 @@ const Services: React.FC = () => {
           </ScrollAnimation>
         </div>
       </section>
-
       {/* Services Categories */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Mapping over servicesData to create sections */}
-          {servicesData.map((service) => (
+          {servicesData.map((service, serviceIndex) => (
             <div
               key={service.title}
               id={slugify(service.title)}
-              className="mb-20"
+              className={`mb-20 last:mb-0  ${
+                serviceIndex % 2 === 1 ? "lg:flex-row-reverse" : ""
+              }`} // Alternating image side
             >
               <ScrollAnimation>
-                <div className="text-center mb-12">
+                <div className="text-center lg:text-center mb-12">
+                  {" "}
+                  {/* Adjusted text alignment */}
                   <div className="w-20 h-20 bg-[#008080]/20 rounded-xl flex items-center justify-center mx-auto mb-6">
-                    {/* Placeholder for dynamic icons if needed */}
-                    <Radio className="w-10 h-10 text-[#008080]" />
+                    {" "}
+                    {/* Adjusted icon alignment */}
+                    {/* Render dynamic icon based on service data, fallback to Radio if not specified */}
+                    {React.createElement(service.iconComponent || Radio, {
+                      className: "w-10 h-10 text-[#008080]",
+                    })}
                   </div>
                   <h2 className="text-3xl md:text-4xl font-bold mb-4">
                     {service.title}
                   </h2>
-                  <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-relaxed">
+                  <p className="text-gray-400 text-lg max-w-3xl lg:max-w-full mx-auto lg:mx-0 leading-relaxed">
+                    {" "}
+                    {/* Adjusted max-width */}
                     {service.description}
                   </p>
                 </div>
               </ScrollAnimation>
 
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {service.subServices.map((sub, index) => (
-                  <ScrollAnimation key={index} delay={(index % 3) + 1}>
-                    <div className="bg-gray-700/50 backdrop-blur-sm p-6 rounded-xl border border-gray-600 hover:border-[#008080] transition-all duration-300 group">
-                      <div className="flex items-start space-x-3">
-                        <ChevronRight className="w-5 h-5 text-[#008080] mt-1 group-hover:translate-x-1 transition-transform" />
-                        <div>
-                          <h3 className="text-lg font-bold mb-2 text-white">
-                            {sub}
-                          </h3>
-                        </div>
+              {/* New structure for image and sub-services */}
+              <div className="grid lg:grid-cols-2 gap-12 items-center">
+                {/* Image for the service */}
+                <ScrollAnimation delay={0.2}>
+                  <div className="relative rounded-xl overflow-hidden shadow-xl">
+                    <img
+                      src={service.imageUrl}
+                      alt={service.title}
+                      className="w-full h-80 object-cover" // Fixed height for consistency, adjust as needed
+                    />
+                    <div className="absolute inset-0 bg-gray-900/30" />
+                  </div>
+                </ScrollAnimation>
+
+                {/* Sub-services list */}
+                <div className="grid md:grid-cols-2 gap-6">
+                  {service.subServices.map((sub, index) => (
+                    <ScrollAnimation key={index} delay={index * 0.1 + 0.3}>
+                      <div className="bg-gray-700/50 backdrop-blur-sm p-6 rounded-xl border border-gray-600 hover:border-[#008080] transition-all duration-300 group flex items-start space-x-3">
+                        <CheckCircle className="w-5 h-5 text-[#008080] mt-1 flex-shrink-0" />{" "}
+                        {/* Changed to CheckCircle for a bullet effect */}
+                        <p className="text-white font-medium">{sub}</p>
                       </div>
-                    </div>
-                  </ScrollAnimation>
-                ))}
+                    </ScrollAnimation>
+                  ))}
+                </div>
               </div>
             </div>
           ))}
         </div>
       </section>
-
       {/* Process Section */}
       <section className="py-20 bg-gray-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

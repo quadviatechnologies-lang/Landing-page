@@ -5,6 +5,7 @@ import ScrollAnimation from "../components/ScrollAnimation";
 import home_hero_img from "../assets/Home-hero2.jpg";
 import { Star } from "lucide-react";
 import testimonial_avatar from "../assets/testimonial-avatar.jpeg";
+import networking_bg from "../assets/network-image.jpeg"
 
 const Home: React.FC = () => {
   return (
@@ -67,8 +68,20 @@ const Home: React.FC = () => {
       </section>
 
       {/* Key Selling Points */}
-      <section className="py-20 bg-gray-800/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-20 bg-gray-800/50 overflow-hidden">
+        {" "}
+        {/* Added 'relative' and 'overflow-hidden' */}
+        {/* Background Image Overlay */}
+        <div className="absolute inset-0 z-0 opacity-80">
+          <img
+            src="https://www.spiretechgroup.com/wp-content/uploads/2023/12/fiber-optic-with-lan-wifi-cable-wire-digital-internet-business-network-min-1024x683.jpg.webp" // Your imported image
+            alt="Abstract networking background"
+            className="w-full h-full object-cover" // Adjust opacity as needed
+          />
+          <div className="absolute inset-0 bg-gray-800/60" />{" "}
+          {/* Dark overlay to ensure text readability */}
+        </div>
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollAnimation>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
