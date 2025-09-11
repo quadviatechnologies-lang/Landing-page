@@ -74,7 +74,7 @@ const Home: React.FC = () => {
         {/* Background Image Overlay */}
         <div className="absolute inset-0 z-0 opacity-80">
           <img
-            src="https://www.spiretechgroup.com/wp-content/uploads/2023/12/fiber-optic-with-lan-wifi-cable-wire-digital-internet-business-network-min-1024x683.jpg.webp" // Your imported image
+            src="https://www.networkdrops.com/wp-content/uploads/2024/11/FiberOpticcable.jpg" // Your imported image
             alt="Abstract networking background"
             className="w-full h-full object-cover" // Adjust opacity as needed
           />
