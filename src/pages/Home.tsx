@@ -24,16 +24,14 @@ const Home: React.FC = () => {
         {/* Hero Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <ScrollAnimation>
-            {/* UPDATED: Reduced base font size */}
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Enhancing Enterprise Efficiency with{" "}
-              <span className="text-teal-400">Dependable Security</span> &
+              <span className="text-[#008080]">Dependable Security</span> &
               Network Solutions
             </h1>
           </ScrollAnimation>
 
           <ScrollAnimation delay={1}>
-            {/* UPDATED: Reduced base font size */}
             <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-4xl mx-auto">
               We are leaders in providing state-of-the-art telecommunication,
               networking, and security system facilities for enterprises across
@@ -43,18 +41,16 @@ const Home: React.FC = () => {
 
           <ScrollAnimation delay={2}>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              {/* UPDATED: Reduced base font size */}
               <Link
                 to="/contact"
-                className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-200 transform hover:scale-105 flex items-center justify-center group"
+                className="bg-[#008080] hover:bg-[#006666] text-white px-8 py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-200 transform hover:scale-105 flex items-center justify-center group"
               >
                 Request a Consultation
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </Link>
-              {/* UPDATED: Reduced base font size */}
               <Link
                 to="/services"
-                className="border-2 border-teal-500 text-teal-400 hover:bg-teal-500 hover:text-white px-8 py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-200"
+                className="border-2 border-[#008080] text-[#008080] hover:bg-[#008080] hover:text-white px-8 py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-200"
               >
                 Our Services
               </Link>
@@ -64,8 +60,8 @@ const Home: React.FC = () => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="w-6 h-10 border-2 border-teal-400 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-teal-400 rounded-full mt-2 animate-pulse" />
+          <div className="w-6 h-10 border-2 border-[#008080] rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-[#008080] rounded-full mt-2 animate-pulse" />
           </div>
         </div>
       </section>
@@ -75,12 +71,10 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollAnimation>
             <div className="text-center mb-16">
-              {/* UPDATED: Reduced base font size */}
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Why Choose{" "}
-                <span className="text-teal-400 font-comfortaa">QUADVIA?</span>
+                <span className="text-[#008080] font-comfortaa">QUADVIA?</span>
               </h2>
-              {/* UPDATED: Reduced base font size */}
               <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
                 We deliver excellence through innovation, expertise, and
                 unwavering commitment to your success.
@@ -116,15 +110,13 @@ const Home: React.FC = () => {
               },
             ].map((point, index) => (
               <ScrollAnimation key={index} delay={index + 1}>
-                <div className="bg-gray-700/50 backdrop-blur-sm p-8 rounded-xl border border-gray-600 hover:border-teal-400 transition-all duration-300 group">
-                  <div className="w-16 h-16 bg-teal-500/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-teal-500/30 transition-colors">
-                    <point.icon className="w-8 h-8 text-teal-400" />
+                <div className="bg-gray-700/50 backdrop-blur-sm p-8 rounded-xl border border-gray-600 hover:border-[#008080] transition-all duration-300 group">
+                  <div className="w-16 h-16 bg-[#008080]/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#008080]/30 transition-colors">
+                    <point.icon className="w-8 h-8 text-[#008080]" />
                   </div>
-                  {/* UPDATED: Reduced base font size */}
                   <h3 className="text-lg font-bold mb-4 text-white">
                     {point.title}
                   </h3>
-                  {/* Base size for card text is generally fine, no change needed here */}
                   <p className="text-gray-400 leading-relaxed">
                     {point.description}
                   </p>
@@ -141,7 +133,7 @@ const Home: React.FC = () => {
           <ScrollAnimation>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                What Our <span className="text-teal-400">Clients Say</span>
+                What Our <span className="text-[#008080]">Clients Say</span>
               </h2>
               <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
                 Don't just take our word for it, hear from the enterprises who
@@ -181,7 +173,7 @@ const Home: React.FC = () => {
               },
             ].map((testimonial, index) => (
               <ScrollAnimation key={index} delay={index + 1}>
-                <div className="bg-gray-700/50 backdrop-blur-sm p-8 rounded-xl border border-gray-600 hover:border-teal-400 transition-all duration-300 h-full flex flex-col">
+                <div className="bg-gray-700/50 backdrop-blur-sm p-8 rounded-xl border border-gray-600 hover:border-[#008080] transition-all duration-300 h-full flex flex-col">
                   <div className="flex mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
                       <Star
@@ -208,6 +200,7 @@ const Home: React.FC = () => {
                       </div>
                     </div>
                   </div>
+                  {/* ... testimonial content */}
                 </div>
               </ScrollAnimation>
             ))}
@@ -216,22 +209,19 @@ const Home: React.FC = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-teal-600/20 to-blue-600/20">
+      <section className="py-20 bg-gradient-to-br from-[#008080]/20 to-blue-600/20">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <ScrollAnimation>
-            {/* UPDATED: Reduced base font size */}
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Ready to Transform Your Infrastructure?
             </h2>
-            {/* UPDATED: Reduced base font size */}
             <p className="text-lg md:text-xl text-gray-300 mb-8">
               Let's discuss how Quadvia can enhance your enterprise connectivity
               and security.
             </p>
-            {/* UPDATED: Reduced base font size */}
             <Link
               to="/contact"
-              className="bg-teal-500 hover:bg-teal-600 text-white px-8 py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-200 transform hover:scale-105 inline-flex items-center group"
+              className="bg-[#008080] hover:bg-[#006666] text-white px-8 py-4 rounded-lg font-semibold text-base sm:text-lg transition-all duration-200 transform hover:scale-105 inline-flex items-center group"
             >
               Start Your Project
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />

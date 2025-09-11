@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, Mail } from "lucide-react"; // Added Phone and Mail icons
+import { Menu, X, Phone, Mail } from "lucide-react";
 import logo from "../assets/QUADVIA logo1.png";
 
 const Header: React.FC = () => {
@@ -39,19 +39,18 @@ const Header: React.FC = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto pt-4 pb-5 px-4 sm:px-6 lg:px-8">
-        {/* UPDATED: Changed justify-end to justify-between for all screen sizes */}
         <div className="relative flex items-center justify-between h-16">
-          {/* --- NEW Mobile Contact Icons (Left Side) --- */}
+          {/* --- Mobile Contact Icons (Left Side) --- */}
           <div className="md:hidden flex items-center space-x-4">
             <a
               href={`tel:${phoneNumber}`}
-              className="text-gray-300 hover:text-teal-400"
+              className="text-gray-300 hover:text-[#008080]"
             >
               <Phone size={22} />
             </a>
             <a
               href={`mailto:${emailAddress}`}
-              className="text-gray-300 hover:text-teal-400"
+              className="text-gray-300 hover:text-[#008080]"
             >
               <Mail size={22} />
             </a>
@@ -75,19 +74,19 @@ const Header: React.FC = () => {
                 to={item.path}
                 className={`relative px-3 py-2 text-sm font-medium transition-colors duration-200 ${
                   location.pathname === item.path
-                    ? "text-teal-400"
-                    : "text-gray-300 hover:text-teal-400"
+                    ? "text-[#008080]"
+                    : "text-gray-300 hover:text-[#008080]"
                 }`}
               >
                 {item.name}
                 {location.pathname === item.path && (
-                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-teal-400 rounded-full" />
+                  <span className="absolute bottom-0 left-0 w-full h-0.5 bg-[#008080] rounded-full" />
                 )}
               </Link>
             ))}
             <Link
               to="/contact"
-              className="bg-teal-500 hover:bg-teal-600 text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
+              className="bg-[#008080] hover:bg-[#006666] text-white px-6 py-2 rounded-lg font-medium transition-colors duration-200"
             >
               Get Quote
             </Link>
@@ -112,8 +111,8 @@ const Header: React.FC = () => {
                   to={item.path}
                   className={`px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-200 ${
                     location.pathname === item.path
-                      ? "text-teal-400 bg-gray-700"
-                      : "text-gray-300 hover:text-teal-400 hover:bg-gray-700"
+                      ? "text-[#008080] bg-gray-700"
+                      : "text-gray-300 hover:text-[#008080] hover:bg-gray-700"
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
@@ -122,7 +121,7 @@ const Header: React.FC = () => {
               ))}
               <Link
                 to="/contact"
-                className="bg-teal-500 hover:bg-teal-600 text-white px-3 py-2 rounded-lg font-medium text-center transition-colors duration-200"
+                className="bg-[#008080] hover:bg-[#006666] text-white px-3 py-2 rounded-lg font-medium text-center transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Get Quote

@@ -1,12 +1,11 @@
-import React from 'react';
-import { Building2, Users, Award, Globe } from 'lucide-react';
-import ScrollAnimation from '../components/ScrollAnimation';
-import telecom_service from "../assets/Telecom-service.jpeg"
+import React from "react";
+import { Building2, Users, Award, Globe } from "lucide-react";
+import ScrollAnimation from "../components/ScrollAnimation";
+import telecom_service from "../assets/Telecom-service.jpeg";
 
 const About: React.FC = () => {
   return (
     <div className="min-h-screen pt-16">
-      {/* Hero Section */}
       {/* Hero Section */}
       <section className="relative min-h-[60vh] md:min-h-[50vh] flex items-center justify-center py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -23,7 +22,9 @@ const About: React.FC = () => {
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
                 Engineering the Future of{" "}
-                <span className="text-teal-400">Connectivity and Security</span>
+                <span className="text-[#008080]">
+                  Connectivity and Security
+                </span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
                 Quadvia Technologies is an innovation-led, technology-driven,
@@ -41,7 +42,7 @@ const About: React.FC = () => {
             <ScrollAnimation>
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Our <span className="text-teal-400">Mission</span>
+                  Our <span className="text-[#008080]">Mission</span>
                 </h2>
                 <p className="text-gray-300 text-lg mb-6 leading-relaxed">
                   We were founded with a clear mission: to lead the revolution
@@ -51,7 +52,7 @@ const About: React.FC = () => {
                 <p className="text-gray-300 text-lg mb-6 leading-relaxed">
                   Our greatest asset is our team. With skilled and experienced
                   human resources, we have the expertise to deploy
-                  high performance, ultra low latency networks that form the
+                  high-performance, ultra-low latency networks that form the
                   critical backbone of your operations.
                 </p>
                 <p className="text-gray-300 text-lg leading-relaxed">
@@ -69,7 +70,7 @@ const About: React.FC = () => {
                   alt="Team collaboration"
                   className="rounded-xl shadow-2xl"
                 />
-                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-teal-500/20 rounded-xl blur-xl" />
+                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#008080]/20 rounded-xl blur-xl" />
               </div>
             </ScrollAnimation>
           </div>
@@ -82,7 +83,7 @@ const About: React.FC = () => {
           <ScrollAnimation>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Our <span className="text-teal-400">Impact</span>
+                Our <span className="text-[#008080]">Impact</span>
               </h2>
               <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                 Numbers that showcase our commitment to excellence and client
@@ -99,11 +100,11 @@ const About: React.FC = () => {
               { number: "24/7", label: "Support Available", icon: Users },
             ].map((stat, index) => (
               <ScrollAnimation key={index} delay={index + 1}>
-                <div className="text-center bg-gray-700/50 p-8 rounded-xl border border-gray-600 hover:border-teal-400 transition-all duration-300">
-                  <div className="w-16 h-16 bg-teal-500/20 rounded-xl flex items-center justify-center mx-auto mb-4">
-                    <stat.icon className="w-8 h-8 text-teal-400" />
+                <div className="text-center bg-gray-700/50 p-8 rounded-xl border border-gray-600 hover:border-[#008080] transition-all duration-300">
+                  <div className="w-16 h-16 bg-[#008080]/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+                    <stat.icon className="w-8 h-8 text-[#008080]" />
                   </div>
-                  <div className="text-4xl font-bold text-teal-400 mb-2">
+                  <div className="text-4xl font-bold text-[#008080] mb-2">
                     {stat.number}
                   </div>
                   <div className="text-gray-300 font-medium">{stat.label}</div>
@@ -120,7 +121,7 @@ const About: React.FC = () => {
           <ScrollAnimation>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Our <span className="text-teal-400">Clientele</span>
+                Our <span className="text-[#008080]">Clientele</span>
               </h2>
               <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                 We proudly serve diverse industries across South India with our
@@ -167,7 +168,7 @@ const About: React.FC = () => {
               },
             ].map((client, index) => (
               <ScrollAnimation key={index} delay={(index % 3) + 1}>
-                <div className="bg-gray-700/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-600 hover:border-teal-400 transition-all duration-300 group">
+                <div className="bg-gray-700/50 backdrop-blur-sm rounded-xl overflow-hidden border border-gray-600 hover:border-[#008080] transition-all duration-300 group">
                   <div className="relative h-48 overflow-hidden">
                     <img
                       src={client.image}
@@ -192,12 +193,12 @@ const About: React.FC = () => {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-gradient-to-br from-teal-600/20 to-blue-600/20">
+      <section className="py-20 bg-gradient-to-br from-[#008080]/20 to-blue-600/20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollAnimation>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Our <span className="text-teal-400">Values</span>
+                Our <span className="text-[#008080]">Values</span>
               </h2>
               <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                 The principles that guide everything we do and every solution we
@@ -225,8 +226,8 @@ const About: React.FC = () => {
               },
             ].map((value, index) => (
               <ScrollAnimation key={index} delay={index + 1}>
-                <div className="text-center p-8 bg-gray-700/30 rounded-xl border border-gray-600 hover:border-teal-400 transition-all duration-300">
-                  <h3 className="text-2xl font-bold mb-4 text-teal-400">
+                <div className="text-center p-8 bg-gray-700/30 rounded-xl border border-gray-600 hover:border-[#008080] transition-all duration-300">
+                  <h3 className="text-2xl font-bold mb-4 text-[#008080]">
                     {value.title}
                   </h3>
                   <p className="text-gray-300 leading-relaxed">

@@ -4,8 +4,8 @@ import { MapPin, Phone, Mail, Linkedin, Twitter } from 'lucide-react';
 import quadvia_logo from "../assets/QUADVIA logo1.png"
 
 const Footer: React.FC = () => {
-
   const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, "-");
+  
   return (
     <footer className="bg-gray-900 border-t border-gray-800">
       {/* Main Footer Content */}
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
                 <li key={link.name}>
                   <Link
                     to={link.path}
-                    className="text-gray-400 hover:text-teal-400 transition-colors duration-200 text-sm"
+                    className="text-gray-400 hover:text-[#008080] transition-colors duration-200 text-sm"
                   >
                     {link.name}
                   </Link>
@@ -64,10 +64,9 @@ const Footer: React.FC = () => {
                 "Security Surveillance",
               ].map((service) => (
                 <li key={service}>
-                  {/* UPDATED: The 'to' prop now includes the hash link */}
                   <Link
                     to={`/services#${slugify(service)}`}
-                    className="text-gray-400 hover:text-teal-400 transition-colors duration-200 text-sm"
+                    className="text-gray-400 hover:text-[#008080] transition-colors duration-200 text-sm"
                   >
                     {service}
                   </Link>
@@ -83,25 +82,24 @@ const Footer: React.FC = () => {
             </h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
-                <MapPin className="w-4 h-4 text-teal-400 mt-0.5 flex-shrink-0" />
+                <MapPin className="w-4 h-4 text-[#008080] mt-0.5 flex-shrink-0" />
                 <span className="text-gray-400 text-sm">
                   1st floor, 02/90-N, Cherur Road, Vengara, Oorakam, Malappuram,
                   Kerala, Pin-676519
                 </span>
               </li>
               <li className="flex items-center space-x-3">
-                <Phone className="w-4 h-4 text-teal-400 flex-shrink-0" />
-                <p className="text-gray-400 hover:text-teal-400 transition-colors duration-200 text-sm">
-                  {" "}
+                <Phone className="w-4 h-4 text-[#008080] flex-shrink-0" />
+                <p className="text-gray-400 hover:text-[#008080] transition-colors duration-200 text-sm">
                   +91 949 705 5010, +91 956 794 8489
                 </p>
               </li>
               <li className="flex items-center space-x-3">
-                <Mail className="w-4 h-4 text-teal-400 flex-shrink-0" />
+                <Mail className="w-4 h-4 text-[#008080] flex-shrink-0" />
                 <a
                   href="mailto:info@quadvia.com"
                   target="_blank"
-                  className="text-gray-400 hover:text-teal-400 transition-colors duration-200 text-sm"
+                  className="text-gray-400 hover:text-[#008080] transition-colors duration-200 text-sm"
                 >
                   info@quadvia.com
                 </a>
@@ -121,14 +119,14 @@ const Footer: React.FC = () => {
             <div className="flex items-center space-x-4">
               <a
                 href="#"
-                className="text-gray-400 hover:text-teal-400 transition-colors duration-200"
+                className="text-gray-400 hover:text-[#008080] transition-colors duration-200"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
                 href="#"
-                className="text-gray-400 hover:text-teal-400 transition-colors duration-200"
+                className="text-gray-400 hover:text-[#008080] transition-colors duration-200"
                 aria-label="Twitter"
               >
                 <Twitter className="w-5 h-5" />

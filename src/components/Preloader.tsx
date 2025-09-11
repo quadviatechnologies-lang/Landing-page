@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Preloader: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const Preloader: React.FC = () => {
           {[0, 1, 2, 3].map((index) => (
             <div
               key={index}
-              className="bg-teal-500 rounded-sm animate-pulse"
+              className="bg-[#008080] rounded-sm animate-pulse"
               style={{
                 width: "8px",
                 height: `${20 + index * 8}px`,
@@ -18,7 +18,7 @@ const Preloader: React.FC = () => {
             />
           ))}
         </div>
-        <div className="text-2xl font-bold text-teal-500 mb-2 font-comfortaa">
+        <div className="text-2xl md:text-4xl font-extrabold text-[#008080] mb-2 font-comfortaa">
           QUADVIA TECHNOLOGIES
         </div>
         <div className="text-gray-400 text-sm">

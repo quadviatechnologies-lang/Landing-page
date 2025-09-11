@@ -10,14 +10,6 @@ const Contact: React.FC = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! We will get back to you soon.");
-    setFormData({ name: "", email: "", company: "", message: "" });
-  };
-
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -44,7 +36,7 @@ const Contact: React.FC = () => {
           <ScrollAnimation>
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                <span className="text-teal-400">Connect</span> With Us
+                <span className="text-[#008080]">Connect</span> With Us
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
                 Ready to transform your enterprise infrastructure? Let's discuss
@@ -71,8 +63,8 @@ const Contact: React.FC = () => {
 
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-teal-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-teal-400" />
+                    <div className="w-12 h-12 bg-[#008080]/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <MapPin className="w-6 h-6 text-[#008080]" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-white mb-1">
@@ -89,8 +81,8 @@ const Contact: React.FC = () => {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-teal-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-teal-400" />
+                    <div className="w-12 h-12 bg-[#008080]/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Mail className="w-6 h-6 text-[#008080]" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-white mb-1">
@@ -100,7 +92,7 @@ const Contact: React.FC = () => {
                         <a
                           href="mailto:info@quadvia.com"
                           target="_blank"
-                          className="hover:text-teal-400 transition-colors"
+                          className="hover:text-[#008080] transition-colors"
                         >
                           info@quadvia.com
                         </a>
@@ -109,8 +101,8 @@ const Contact: React.FC = () => {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-teal-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-6 h-6 text-teal-400" />
+                    <div className="w-12 h-12 bg-[#008080]/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Phone className="w-6 h-6 text-[#008080]" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-white mb-1">Call Us</h3>
@@ -121,8 +113,8 @@ const Contact: React.FC = () => {
                   </div>
 
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-teal-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Users className="w-6 h-6 text-teal-400" />
+                    <div className="w-12 h-12 bg-[#008080]/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Users className="w-6 h-6 text-[#008080]" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-white mb-1">
@@ -133,7 +125,7 @@ const Contact: React.FC = () => {
                         <a
                           href="mailto:shamsudheen@quadvia.com"
                           target="_blank"
-                          className="text-teal-400 hover:text-teal-300 transition-colors"
+                          className="text-[#008080] hover:text-[#006666] transition-colors"
                         >
                           shamsudheen@quadvia.com
                         </a>
@@ -143,8 +135,8 @@ const Contact: React.FC = () => {
 
                   {/* --- NEW NAVIGATION LINK --- */}
                   <div className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-teal-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Navigation className="w-6 h-6 text-teal-400" />
+                    <div className="w-12 h-12 bg-[#008080]/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Navigation className="w-6 h-6 text-[#008080]" />
                     </div>
                     <div>
                       <h3 className="font-semibold text-white mb-1">
@@ -154,7 +146,7 @@ const Contact: React.FC = () => {
                         href="https://maps.app.goo.gl/pgPXfAeucqye5hE26?g_st=aw"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-gray-400 hover:text-teal-400 transition-colors"
+                        className="text-gray-400 hover:text-[#008080] transition-colors"
                       >
                         Open in Google Maps
                       </a>
@@ -190,7 +182,7 @@ const Contact: React.FC = () => {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-teal-400 focus:ring-1 focus:ring-teal-400 transition-colors"
+                        className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-[#008080] focus:ring-1 focus:ring-[#008080] transition-colors"
                         placeholder="Your full name"
                       />
                     </div>
@@ -208,7 +200,7 @@ const Contact: React.FC = () => {
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-teal-400 focus:ring-1 focus:ring-teal-400 transition-colors"
+                        className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-[#008080] focus:ring-1 focus:ring-[#008080] transition-colors"
                         placeholder="your.email@company.com"
                       />
                     </div>
@@ -227,7 +219,7 @@ const Contact: React.FC = () => {
                       name="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-teal-400 focus:ring-1 focus:ring-teal-400 transition-colors"
+                      className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-[#008080] focus:ring-1 focus:ring-[#008080] transition-colors"
                       placeholder="Your company name"
                     />
                   </div>
@@ -246,14 +238,14 @@ const Contact: React.FC = () => {
                       rows={6}
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-teal-400 focus:ring-1 focus:ring-teal-400 transition-colors resize-none"
+                      className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-[#008080] focus:ring-1 focus:ring-[#008080] transition-colors resize-none"
                       placeholder="Tell us about your project requirements..."
                     />
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full bg-teal-500 hover:bg-teal-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 flex items-center justify-center group"
+                    className="w-full bg-[#008080] hover:bg-[#006666] text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 flex items-center justify-center group"
                   >
                     Send Message
                     <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -269,7 +261,7 @@ const Contact: React.FC = () => {
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <ScrollAnimation>
-            <div className="bg-gradient-to-br from-teal-600/20 to-blue-600/20 rounded-xl p-8 text-center">
+            <div className="bg-gradient-to-br from-[#008080]/20 to-blue-600/20 rounded-xl p-8 text-center">
               <h3 className="text-2xl font-bold mb-4">Business Hours</h3>
               <div className="grid md:grid-cols-2 gap-6 text-gray-300">
                 <div>
@@ -285,7 +277,7 @@ const Contact: React.FC = () => {
                   </h4>
                   <p>24/7 Emergency Support Available</p>
                   <p>for Critical Infrastructure Issues</p>
-                  <p className="text-teal-400 font-medium">
+                  <p className="text-[#008080] font-medium">
                     Call: +91 949 705 5010, +91 956 794 8489
                   </p>
                 </div>
