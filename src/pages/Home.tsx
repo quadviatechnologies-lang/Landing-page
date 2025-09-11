@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Users, Zap, Shield, Target } from "lucide-react";
 import ScrollAnimation from "../components/ScrollAnimation";
-import home_hero_img from "../assets/Home-hero.jpeg";
+import home_hero_img from "../assets/Home-hero2.jpg";
 import { Star } from "lucide-react";
 import testimonial_avatar from "../assets/testimonial-avatar.jpeg";
 
