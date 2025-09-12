@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapPin, Phone, Mail, Linkedin, Twitter } from 'lucide-react';
-import quadvia_logo from "../assets/QUADVIA logo1.png"
+import quadvia_logo from "../assets/QUADVIA logo1.png";
+import Quadia_logo from "../assets/QUADVIA Logo 3.png"
 
 const Footer: React.FC = () => {
   const slugify = (text: string) => text.toLowerCase().replace(/\s+/g, "-");
@@ -16,7 +17,7 @@ const Footer: React.FC = () => {
             <Link to="/" className="flex items-center space-x-2">
               <div className="w-40 rounded-lg flex items-center justify-center">
                 <img
-                  src={quadvia_logo}
+                  src={Quadia_logo}
                   alt="Quadvia Logo"
                   className="w-full h-auto"
                 />
