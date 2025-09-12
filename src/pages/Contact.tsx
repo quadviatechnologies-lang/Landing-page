@@ -107,7 +107,7 @@ const Contact: React.FC = () => {
                     <div>
                       <h3 className="font-semibold text-white mb-1">Call Us</h3>
                       <p className="text-gray-400">
-                        +91 949 705 5010, +91 956 794 8489
+                        +91 949 705 5010, +91 974 677 0348
                       </p>
                     </div>
                   </div>
@@ -278,7 +278,7 @@ const Contact: React.FC = () => {
                   <p>24/7 Emergency Support Available</p>
                   <p>for Critical Infrastructure Issues</p>
                   <p className="text-[#008080] font-medium">
-                    Call: +91 949 705 5010, +91 956 794 8489
+                    Call: +91 949 705 5010, +91 974 677 0348
                   </p>
                 </div>
               </div>
