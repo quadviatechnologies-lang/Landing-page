@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Mail } from "lucide-react";
-import logo from "../assets/QUADVIA Logo 3.png";
+import logo from "../assets/QUADVIA logo1.png";
 import full_logo from "../assets/QUADVIA logo2.png"
 
 const Header: React.FC = () => {
@@ -63,7 +63,7 @@ const Header: React.FC = () => {
             className="absolute left-1/2 -translate-x-1/2 md:static md:left-auto md:translate-x-0 flex items-center pt-5"
           >
             <div className="w-40 md:w-60 transition-all duration-300">
-              <img src={full_logo} alt="Quadvia Logo" className="w-full h-auto" />
+              <img src={logo} alt="Quadvia Logo" className="w-full h-auto" />
             </div>
           </Link>
 

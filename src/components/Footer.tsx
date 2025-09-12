@@ -17,15 +17,14 @@ const Footer: React.FC = () => {
             <Link to="/" className="flex items-center space-x-2">
               <div className="w-40 rounded-lg flex items-center justify-center">
                 <img
-                  src={Quadia_logo}
+                  src={quadvia_logo}
                   alt="Quadvia Logo"
                   className="w-full h-auto"
                 />
               </div>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Engineering dependable, state-of-the-art solutions to enhance
-              enterprise efficiency and productivity.
+              Stay Connected. Stay Secured.
             </p>
           </div>
 
