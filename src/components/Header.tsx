@@ -63,7 +63,7 @@ const Header: React.FC = () => {
             className="absolute left-1/2 -translate-x-1/2 md:static md:left-auto md:translate-x-0 flex items-center pt-5"
           >
             <div className="w-40 md:w-60 transition-all duration-300">
-              <img src={logo} alt="Quadvia Logo" className="w-full h-auto" />
+              <img src={full_logo} alt="Quadvia Logo" className="w-full h-auto" />
             </div>
           </Link>
 
