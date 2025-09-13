@@ -8,6 +8,7 @@ const Contact: React.FC = () => {
     email: "",
     company: "",
     message: "",
+    contact_number: "",
   });
 
   const handleChange = (
@@ -206,23 +207,45 @@ const Contact: React.FC = () => {
                     </div>
                   </div>
 
-                  <div>
-                    <label
-                      htmlFor="company"
-                      className="block text-sm font-medium text-gray-300 mb-2"
-                    >
-                      Company Name
-                    </label>
-                    <input
-                      type="text"
-                      id="company"
-                      name="company"
-                      value={formData.company}
-                      onChange={handleChange}
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-[#008080] focus:ring-1 focus:ring-[#008080] transition-colors"
-                      placeholder="Your company name"
-                    />
+                  <div className="grid md:grid-cols-2 gap-6">
+                    <div>
+                      <label
+                        htmlFor="company"
+                        className="block text-sm font-medium text-gray-300 mb-2"
+                      >
+                        Company Name
+                      </label>
+                      <input
+                        type="text"
+                        id="company"
+                        name="company"
+                        value={formData.company}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-[#008080] focus:ring-1 focus:ring-[#008080] transition-colors"
+                        placeholder="Your company name"
+                      />
+                    </div>
+                    <div>
+                      <label
+                        htmlFor="email"
+                        className="block text-sm font-medium text-gray-300 mb-2"
+                      >
+                        Mobile Number *
+                      </label>
+                      <input
+                        type="contact_number"
+                        id="contact_number"
+                        name="contact_number"
+                        required
+                        value={formData.contact_number}
+                        onChange={handleChange}
+                        className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-lg text-white placeholder-gray-400 focus:border-[#008080] focus:ring-1 focus:ring-[#008080] transition-colors"
+                        placeholder="+91 999 999 9999"
+                      />
+                    </div>
                   </div>
+
+                  <div></div>
 
                   <div>
                     <label
