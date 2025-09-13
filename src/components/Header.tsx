@@ -28,7 +28,6 @@ const Header: React.FC = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
-    { name: "Contact", path: "/contact" },
   ];
 
   return (
@@ -91,6 +90,21 @@ const Header: React.FC = () => {
             >
               Get Quote
             </Link>
+
+            <div className=" flex items-center space-x-4">
+            <a
+              href={`tel:${phoneNumber}`}
+              className="text-gray-300 hover:text-[#008080]"
+            >
+              <Phone size={22} />
+            </a>
+            <a
+              href={`mailto:${emailAddress}`}
+              className="text-gray-300 hover:text-[#008080]"
+            >
+              <Mail size={22} />
+            </a>
+          </div>
           </nav>
 
           {/* Mobile Menu Button (Right Side) */}
