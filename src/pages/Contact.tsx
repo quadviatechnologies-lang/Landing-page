@@ -36,7 +36,7 @@ const Contact: React.FC = () => {
           <ScrollAnimation>
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                <span className="text-[#008080]">Connect</span> With Us
+                Connect With Us
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
                 Ready to transform your enterprise infrastructure? Let's discuss

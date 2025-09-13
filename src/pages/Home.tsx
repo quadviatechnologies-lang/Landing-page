@@ -146,7 +146,7 @@ const Home: React.FC = () => {
           <ScrollAnimation>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                What Our <span className="text-[#008080]">Clients Say</span>
+                What Our Clients Say
               </h2>
               <p className="text-base md:text-lg text-gray-400 max-w-2xl mx-auto">
                 Don't just take our word for it, hear from the enterprises who

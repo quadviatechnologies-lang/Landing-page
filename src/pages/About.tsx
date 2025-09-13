@@ -22,9 +22,7 @@ const About: React.FC = () => {
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
                 Engineering the Future of{" "}
-                <span className="text-[#008080]">
                   Connectivity and Security
-                </span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
                 Quadvia Technologies is an innovation-led, technology-driven,
@@ -42,7 +40,7 @@ const About: React.FC = () => {
             <ScrollAnimation>
               <div>
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  Our <span className="text-[#008080]">Mission</span>
+                  Our Mission
                 </h2>
                 <p className="text-gray-300 text-lg mb-6 leading-relaxed">
                   We were founded with a clear mission: to lead the revolution
@@ -83,7 +81,7 @@ const About: React.FC = () => {
           <ScrollAnimation>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Our <span className="text-[#008080]">Impact</span>
+                Our Impact
               </h2>
               <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                 Numbers that showcase our commitment to excellence and client
@@ -121,7 +119,7 @@ const About: React.FC = () => {
           <ScrollAnimation>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Our <span className="text-[#008080]">Clientele</span>
+                Our Clientele
               </h2>
               <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                 We proudly serve diverse industries across South India with our
@@ -198,7 +196,7 @@ const About: React.FC = () => {
           <ScrollAnimation>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Our <span className="text-[#008080]">Values</span>
+                Our Values
               </h2>
               <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                 The principles that guide everything we do and every solution we
@@ -227,7 +225,7 @@ const About: React.FC = () => {
             ].map((value, index) => (
               <ScrollAnimation key={index} delay={index + 1}>
                 <div className="text-center p-8 bg-gray-700/30 rounded-xl border border-gray-600 hover:border-[#008080] transition-all duration-300">
-                  <h3 className="text-2xl font-bold mb-4 text-[#008080]">
+                  <h3 className="text-2xl font-bold mb-4 text-[#ffffff]">
                     {value.title}
                   </h3>
                   <p className="text-gray-300 leading-relaxed">

@@ -94,7 +94,7 @@ const Services: React.FC = () => {
           <ScrollAnimation>
             <div className="text-center">
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Our <span className="text-[#008080]">Integrated Solutions</span>
+                Our Integrated Solutions
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
                 Comprehensive technology services designed to power your
@@ -177,7 +177,7 @@ const Services: React.FC = () => {
           <ScrollAnimation>
             <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                Our <span className="text-[#008080]">Process</span>
+                Our Process
               </h2>
               <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                 A proven methodology that ensures successful project delivery
