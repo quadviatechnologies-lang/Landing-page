@@ -27,7 +27,7 @@ const Home: React.FC = () => {
           <ScrollAnimation>
             <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Enhancing Enterprise Efficiency with{" "}
-              <span className="text-[#008080]">Dependable Security</span> &
+              Dependable Security&
               Network Solutions
             </h1>
           </ScrollAnimation>
